@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Produktivitas Pertanian</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="bg-blur">
+      <div class="bg-number" style="top:45%; left:14%;">🌿</div>
+      <div class="bg-number" style="top:20%; right:14%;">🍃</div>
+      <div class="bg-motif motif-1"></div>
+      <div class="bg-motif motif-2"></div>
+      <div class="bg-motif motif-3"></div>
+    </div>
+
+    <div class="center" id="landing">
+      <div class="hero">
+        <h1>Kalkulator Produktivitas Pertanian</h1>
+        <p>Pilih Sub Sektor untuk Melanjutkan</p>
+      </div>
+      <div class="grid grid-2" id="sector-grid"></div>
+    </div>
+
+    <div class="center" id="form-area" style="display:none;">
+      <div class="glass">
+        <div class="header">
+          <button class="btn-ghost" id="btn-back">← Kembali</button>
+          <div class="sector-info">
+            <span id="sector-emoji">🌾</span>
+            <div>
+              <div id="sector-name">Tanaman Pangan</div>
+              <div id="sector-desc">Deskripsi</div>
+            </div>
+          </div>
+          <div style="width:80px;"></div>
+        </div>
+
+        <div class="grid" id="form-fields"></div>
+
+        <div class="actions">
+          <button class="btn-primary" id="btn-calc">Hitung</button>
+          <button class="btn-secondary" id="btn-reset">Reset</button>
+        </div>
+
+        <div class="results" id="result-box" style="display:none;">
+          <div class="results-head">
+            <h3>📊 Hasil Perhitungan</h3>
+            <button class="btn-primary small" id="btn-copy">Salin Hasil</button>
+          </div>
+          <div id="result-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
